@@ -66,7 +66,7 @@ sudo usermod -aG docker $USER   # log out and back in after
 **Run FortiWAN-E:**
 
 ```bash
-git clone https://github.com/FreddyMcFett/fortiwan-e.git
+git clone https://github.com/migilabs/fortiwan-e.git
 cd fortiwan-e
 docker compose up -d
 ```
@@ -89,7 +89,7 @@ git pull && docker compose up -d --build   # Update
 ### Option 2: Docker Manual
 
 ```bash
-git clone https://github.com/FreddyMcFett/fortiwan-e.git
+git clone https://github.com/migilabs/fortiwan-e.git
 cd fortiwan-e
 docker build -t fortiwane .
 docker run -d --name fortiwane -p 443:443 --restart unless-stopped fortiwane
@@ -100,7 +100,7 @@ docker run -d --name fortiwane -p 443:443 --restart unless-stopped fortiwane
 Supports Debian 10–12 and Ubuntu 18.04+.
 
 ```bash
-git clone https://github.com/FreddyMcFett/fortiwan-e.git
+git clone https://github.com/migilabs/fortiwan-e.git
 cd fortiwan-e
 chmod +x run.sh && ./run.sh
 ```
